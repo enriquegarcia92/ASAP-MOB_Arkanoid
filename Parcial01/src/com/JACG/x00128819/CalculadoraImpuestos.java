@@ -43,4 +43,7 @@ public class CalculadoraImpuestos {
                 "\nTotal ISSS:" + totalISSS +
                 "\nTotal AFP" + totalAFP;
     }
+
+    public static void calcularPago() {
+    }
 }
