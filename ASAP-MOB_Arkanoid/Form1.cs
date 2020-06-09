@@ -7,19 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace ASAP_MOB_Arkanoid
 {
     public partial class Form1 : Form
     {
-
-        private UserControl current;
-        private Top_Score top = new Top_Score();
-        
         public int yspeed,xspeed;
         public const int row = 5;
         public const int col = 13;
         public PictureBox[,] blocks;
+        
         public Form1()
         {
             yspeed = 4;
@@ -90,8 +88,8 @@ namespace ASAP_MOB_Arkanoid
            if (vidas <= 0)
            {
                timer1.Stop();
-               addScore();
                MessageBox.Show("Juego terminado");
+               AgregarDatos();
            }
            //interaccion bola tabla
            if (Ballpicbox.Bounds.IntersectsWith(TabPicbox.Bounds) == true)
@@ -123,22 +121,38 @@ namespace ASAP_MOB_Arkanoid
             TabPicbox.Left = e.X - (TabPicbox.Width/2);
         }
 
-        private void addScore()
+        private static string host = "127.0.0.1",
+            puerto = "5432",
+            database = "ASAP-MOB",
+            userId = "postgres",
+            password = "Oscar";
+
+        private static string sConnection =
+            $"Server={host};Port={puerto};User Id={userId};Password={password};Database={database};";
+
+        public static void ExecuteNonQuery(string act)
         {
-            ConnectionDB.ExecuteNonQuery($"INSERT INTO Jugadores VALUES(" +
-                                        $"'{"11"}'," +
-                                        $"'{label1.Text}'," +
-                                        $"{label2.Text})");
-            
+            NpgsqlConnection connection = new NpgsqlConnection(sConnection);
+            connection.Open();
+
+            NpgsqlCommand command = new NpgsqlCommand(act, connection);
+            command.ExecuteNonQuery();
+
+            connection.Close();
         }
-        
+
+        private void AgregarDatos()
+        {
+            ExecuteNonQuery($"INSERT INTO Jugadores VALUES(" +
+                            $"'{"14"}'," +
+                            $"'{label1.Text}'," +
+                            $"{label2.Text})");
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tableLayoutPanel1.Controls.Remove(current);
-            tableLayoutPanel1.Controls.Add(top, 2, 0);
-            current = top;
-            tableLayoutPanel1.SetRowSpan(current, 2);
+            Form ventana = new Form_2();
+            ventana.Show();
         }
     }
 }

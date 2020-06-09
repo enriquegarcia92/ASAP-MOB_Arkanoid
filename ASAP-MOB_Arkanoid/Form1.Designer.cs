@@ -121,12 +121,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(40, 414);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(722, 480);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 38);
+            this.button1.Size = new System.Drawing.Size(110, 33);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Top Score";
+            this.button1.Text = "ver top score";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
