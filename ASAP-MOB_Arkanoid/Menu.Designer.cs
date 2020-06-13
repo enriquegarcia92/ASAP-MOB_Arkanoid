@@ -31,8 +31,7 @@ namespace ASAP_MOB_Arkanoid
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.jugar = new System.Windows.Forms.Button();
             this.puntajes = new System.Windows.Forms.Button();
@@ -45,9 +44,9 @@ namespace ASAP_MOB_Arkanoid
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::ASAP_MOB_Arkanoid.Properties.Resources.arkanoid_logo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(66, 52);
+            this.pictureBox1.Location = new System.Drawing.Point(57, 45);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(528, 158);
+            this.pictureBox1.Size = new System.Drawing.Size(453, 137);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -55,12 +54,11 @@ namespace ASAP_MOB_Arkanoid
             // 
             this.jugar.BackColor = System.Drawing.Color.Transparent;
             this.jugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jugar.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.jugar.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.jugar.ForeColor = System.Drawing.Color.White;
-            this.jugar.Location = new System.Drawing.Point(164, 291);
+            this.jugar.Location = new System.Drawing.Point(141, 252);
             this.jugar.Name = "jugar";
-            this.jugar.Size = new System.Drawing.Size(313, 102);
+            this.jugar.Size = new System.Drawing.Size(268, 88);
             this.jugar.TabIndex = 1;
             this.jugar.Text = "Jugar";
             this.jugar.UseVisualStyleBackColor = false;
@@ -70,12 +68,11 @@ namespace ASAP_MOB_Arkanoid
             // 
             this.puntajes.BackColor = System.Drawing.Color.Transparent;
             this.puntajes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.puntajes.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.puntajes.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.puntajes.ForeColor = System.Drawing.Color.White;
-            this.puntajes.Location = new System.Drawing.Point(164, 434);
+            this.puntajes.Location = new System.Drawing.Point(141, 376);
             this.puntajes.Name = "puntajes";
-            this.puntajes.Size = new System.Drawing.Size(313, 102);
+            this.puntajes.Size = new System.Drawing.Size(268, 88);
             this.puntajes.TabIndex = 2;
             this.puntajes.Text = "Puntajes";
             this.puntajes.UseVisualStyleBackColor = false;
@@ -85,12 +82,11 @@ namespace ASAP_MOB_Arkanoid
             // 
             this.salir.BackColor = System.Drawing.Color.Transparent;
             this.salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.salir.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.salir.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.salir.ForeColor = System.Drawing.Color.White;
-            this.salir.Location = new System.Drawing.Point(164, 572);
+            this.salir.Location = new System.Drawing.Point(141, 496);
             this.salir.Name = "salir";
-            this.salir.Size = new System.Drawing.Size(313, 102);
+            this.salir.Size = new System.Drawing.Size(268, 88);
             this.salir.TabIndex = 3;
             this.salir.Text = "Salir";
             this.salir.UseVisualStyleBackColor = false;
@@ -98,11 +94,11 @@ namespace ASAP_MOB_Arkanoid
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ASAP_MOB_Arkanoid.Properties.Resources.menu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(664, 721);
+            this.ClientSize = new System.Drawing.Size(569, 625);
             this.ControlBox = false;
             this.Controls.Add(this.salir);
             this.Controls.Add(this.puntajes);
@@ -119,11 +115,11 @@ namespace ASAP_MOB_Arkanoid
             this.ResumeLayout(false);
         }
 
-        #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button salir;
-        private System.Windows.Forms.Button puntajes;
         private System.Windows.Forms.Button jugar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button puntajes;
+        private System.Windows.Forms.Button salir;
+
+        #endregion
     }
 }

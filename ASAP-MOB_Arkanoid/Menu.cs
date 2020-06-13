@@ -18,7 +18,7 @@ namespace ASAP_MOB_Arkanoid
 
         private void jugar_Click(object sender, EventArgs e)
         {
-            Form1 juego = new Form1();
+            User juego = new User();
             juego.Show();
         }
 

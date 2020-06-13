@@ -14,7 +14,7 @@ namespace ASAP_MOB_Arkanoid
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new User());
+            Application.Run(new Menu());;
         }
     }
 }

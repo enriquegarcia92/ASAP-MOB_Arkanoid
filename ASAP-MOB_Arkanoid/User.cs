@@ -27,8 +27,8 @@ namespace ASAP_MOB_Arkanoid
                     MessageBox.Show("Ha ocurrido un error");
                 }
             }
-            Menu menu = new Menu();
-            menu.Show();
+            Form1 form = new Form1();
+            form.Show();
             this.Hide();
         }
     }
