@@ -103,6 +103,7 @@ namespace ASAP_MOB_Arkanoid
             this.BackgroundImage = global::ASAP_MOB_Arkanoid.Properties.Resources.menu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(664, 721);
+            this.ControlBox = false;
             this.Controls.Add(this.salir);
             this.Controls.Add(this.puntajes);
             this.Controls.Add(this.jugar);
@@ -110,6 +111,7 @@ namespace ASAP_MOB_Arkanoid
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu - Arkanoid pre Alpha";

@@ -34,7 +34,7 @@
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
-          <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+          <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
           <Private>True</Private>
         </Reference>
         <Reference Include="mscorlib" />
@@ -44,12 +44,12 @@
         </Reference>
         <Reference Include="System" />
         <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
-          <HintPath>packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+          <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
           <Private>True</Private>
         </Reference>
         <Reference Include="System.Core" />
         <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
-          <HintPath>packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+          <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
           <Private>True</Private>
         </Reference>
         <Reference Include="System.Numerics" />
@@ -57,20 +57,20 @@
           <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
           <Private>True</Private>
         </Reference>
-        <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-          <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+        <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0-preview.5.20278.1\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
           <Private>True</Private>
         </Reference>
-        <Reference Include="System.Text.Encodings.Web, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
-          <HintPath>packages\System.Text.Encodings.Web.4.6.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+        <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>packages\System.Text.Encodings.Web.5.0.0-preview.5.20278.1\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
           <Private>True</Private>
         </Reference>
-        <Reference Include="System.Text.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
-          <HintPath>packages\System.Text.Json.4.6.0\lib\net461\System.Text.Json.dll</HintPath>
+        <Reference Include="System.Text.Json, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>packages\System.Text.Json.5.0.0-preview.5.20278.1\lib\net461\System.Text.Json.dll</HintPath>
           <Private>True</Private>
         </Reference>
         <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
-          <HintPath>packages\System.Threading.Tasks.Extensions.4.5.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+          <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
           <Private>True</Private>
         </Reference>
         <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
@@ -89,12 +89,6 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="BaseDatos.cs" />
-        <Compile Include="Form 2.cs">
-          <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="Form 2.Designer.cs">
-          <DependentUpon>Form 2.cs</DependentUpon>
-        </Compile>
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -109,15 +103,18 @@
         </Compile>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Puntuaciones.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Puntuaciones.Designer.cs">
+          <DependentUpon>Puntuaciones.cs</DependentUpon>
+        </Compile>
         <Compile Include="User.cs">
           <SubType>Form</SubType>
         </Compile>
         <Compile Include="User.Designer.cs">
           <DependentUpon>User.cs</DependentUpon>
         </Compile>
-        <EmbeddedResource Include="Form 2.resx">
-          <DependentUpon>Form 2.cs</DependentUpon>
-        </EmbeddedResource>
         <EmbeddedResource Include="Form1.resx">
           <DependentUpon>Form1.cs</DependentUpon>
         </EmbeddedResource>
@@ -133,6 +130,9 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <EmbeddedResource Include="Puntuaciones.resx">
+          <DependentUpon>Puntuaciones.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="User.resx">
           <DependentUpon>User.cs</DependentUpon>
         </EmbeddedResource>

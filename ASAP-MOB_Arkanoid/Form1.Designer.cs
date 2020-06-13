@@ -52,7 +52,6 @@
             this.Ballpicbox.Size = new System.Drawing.Size(29, 29);
             this.Ballpicbox.TabIndex = 0;
             this.Ballpicbox.TabStop = false;
-            this.Ballpicbox.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // timer1
             // 
@@ -131,6 +130,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ASAP-MOB_Arkanoid";

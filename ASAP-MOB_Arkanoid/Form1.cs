@@ -41,10 +41,6 @@ namespace ASAP_MOB_Arkanoid
                 }
             }
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -126,12 +122,6 @@ namespace ASAP_MOB_Arkanoid
             {
                 MessageBox.Show("Ha ocurrido un error insert player");
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form ventana = new Form_2();
-            ventana.Show();
         }
     }
 }

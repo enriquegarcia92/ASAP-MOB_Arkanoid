@@ -12,7 +12,7 @@ namespace ASAP_MOB_Arkanoid
 
         private void puntajes_Click(object sender, EventArgs e)
         {
-            Form_2 puntuaciones = new Form_2();
+            Puntuaciones puntuaciones = new Puntuaciones();
             puntuaciones.Show();
         }
 
