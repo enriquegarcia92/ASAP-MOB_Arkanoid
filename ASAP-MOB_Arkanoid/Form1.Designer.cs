@@ -30,6 +30,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources =
+                new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Ballpicbox = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.TabPicbox = new System.Windows.Forms.PictureBox();
@@ -37,7 +39,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize) (this.Ballpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.TabPicbox)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -46,10 +47,9 @@
             // Ballpicbox
             // 
             this.Ballpicbox.BackColor = System.Drawing.Color.Red;
-            this.Ballpicbox.Location = new System.Drawing.Point(389, 225);
-            this.Ballpicbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Ballpicbox.Location = new System.Drawing.Point(335, 235);
             this.Ballpicbox.Name = "Ballpicbox";
-            this.Ballpicbox.Size = new System.Drawing.Size(33, 39);
+            this.Ballpicbox.Size = new System.Drawing.Size(29, 29);
             this.Ballpicbox.TabIndex = 0;
             this.Ballpicbox.TabStop = false;
             this.Ballpicbox.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -62,16 +62,16 @@
             // 
             // TabPicbox
             // 
-            this.TabPicbox.BackColor = System.Drawing.Color.Navy;
-            this.TabPicbox.Location = new System.Drawing.Point(332, 454);
-            this.TabPicbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TabPicbox.BackColor = System.Drawing.Color.AliceBlue;
+            this.TabPicbox.Location = new System.Drawing.Point(178, 652);
             this.TabPicbox.Name = "TabPicbox";
-            this.TabPicbox.Size = new System.Drawing.Size(133, 15);
+            this.TabPicbox.Size = new System.Drawing.Size(117, 12);
             this.TabPicbox.TabIndex = 1;
             this.TabPicbox.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -84,62 +84,55 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(847, 46);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(664, 35);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(4, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 22);
+            this.label1.Size = new System.Drawing.Size(90, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(638, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(501, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 31);
+            this.label2.Size = new System.Drawing.Size(160, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(427, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(335, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 26);
+            this.label3.Size = new System.Drawing.Size(159, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(722, 480);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 33);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "ver top score";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 541);
-            this.Controls.Add(this.button1);
+            this.BackgroundImage = global::ASAP_MOB_Arkanoid.Properties.Resources.fondo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(664, 721);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.TabPicbox);
             this.Controls.Add(this.Ballpicbox);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ASAP-MOB_Arkanoid";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
@@ -158,7 +151,5 @@
         private System.Windows.Forms.Timer timer1;
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
     }
 }

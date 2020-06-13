@@ -1,0 +1,12 @@
+CREATE TABLE Jugadores(
+id SERIAL PRIMARY KEY,
+nombres VARCHAR(50) NOT NULL,
+puntaje INT NOT NULL
+);
+
+nuevo jugador
+INSERT INTO Jugadores(nombres, puntaje)
+VALUES('prueba',619);
+
+mostrar puntajes de todos
+SELECT id, nombres, puntaje FROM Jugadores

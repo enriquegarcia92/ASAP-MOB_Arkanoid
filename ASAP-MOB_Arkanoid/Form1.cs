@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Npgsql;
 
 namespace ASAP_MOB_Arkanoid
 {
@@ -55,7 +48,7 @@ namespace ASAP_MOB_Arkanoid
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            label1.Text = Program.usuario;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -90,6 +83,7 @@ namespace ASAP_MOB_Arkanoid
                timer1.Stop();
                MessageBox.Show("Juego terminado");
                AgregarDatos();
+               this.Close();
            }
            //interaccion bola tabla
            if (Ballpicbox.Bounds.IntersectsWith(TabPicbox.Bounds) == true)
@@ -121,32 +115,17 @@ namespace ASAP_MOB_Arkanoid
             TabPicbox.Left = e.X - (TabPicbox.Width/2);
         }
 
-        private static string host = "127.0.0.1",
-            puerto = "5432",
-            database = "ASAP-MOB",
-            userId = "postgres",
-            password = "Oscar";
-
-        private static string sConnection =
-            $"Server={host};Port={puerto};User Id={userId};Password={password};Database={database};";
-
-        public static void ExecuteNonQuery(string act)
-        {
-            NpgsqlConnection connection = new NpgsqlConnection(sConnection);
-            connection.Open();
-
-            NpgsqlCommand command = new NpgsqlCommand(act, connection);
-            command.ExecuteNonQuery();
-
-            connection.Close();
-        }
-
         private void AgregarDatos()
         {
-            ExecuteNonQuery($"INSERT INTO Jugadores VALUES(" +
-                            $"'{"14"}'," +
-                            $"'{label1.Text}'," +
-                            $"{label2.Text})");
+            try
+            {
+                BaseDatos.ExecuteNonQuery($"INSERT INTO Jugadores(nombres, puntaje) " +
+                                          $"VALUES('{label1.Text}','{label2.Text}'); " );
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show("Ha ocurrido un error insert player");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

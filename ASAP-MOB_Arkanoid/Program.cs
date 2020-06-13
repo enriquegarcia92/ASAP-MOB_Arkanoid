@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ASAP_MOB_Arkanoid
 {
     static class Program
     {
+        public static string usuario = "";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +14,7 @@ namespace ASAP_MOB_Arkanoid
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new User());
         }
     }
 }
