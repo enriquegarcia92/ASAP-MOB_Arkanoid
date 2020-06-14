@@ -115,13 +115,27 @@ namespace ASAP_MOB_Arkanoid
         {
             try
             {
-                BaseDatos.ExecuteNonQuery($"INSERT INTO Jugadores(nombres, puntaje) " +
-                                          $"VALUES('{label1.Text}','{label2.Text}'); " );
+                var dt = BaseDatos.ExecuteQuery("select puntaje from jugadores where nombres = '"+label1.Text+"'");
+                var dr = dt.Rows[0];
+                var savedscore = Convert.ToInt32(dr[0].ToString()); 
+                int newscore = Convert.ToInt32(label2.Text);
+                
+                if (newscore >= savedscore) 
+                { 
+                    BaseDatos.ExecuteNonQuery($"update jugadores set puntaje = '" + label2.Text + 
+                                            "' where nombres = '" + label1.Text + "'");
+                    MessageBox.Show("Nuevo record");
+                }
+                            
             }
             catch (Exception exp)
             {
-                MessageBox.Show("Ha ocurrido un error insert player");
-            }
+                BaseDatos.ExecuteNonQuery($"insert into jugadores(nombres, puntaje) " + 
+                                          $"VALUES('{label1.Text}','{label2.Text}'); " );
+                            MessageBox.Show("record guardado");
+                                                
+            }  
+       
         }
     }
 }

@@ -8,9 +8,9 @@ namespace ASAP_MOB_Arkanoid
         
         private static string host = "127.0.0.1",
             puerto = "5432",
-            database = "Arkanoid",
+            database = "ASAP-MOB",
             userId = "postgres",
-            password = "uca";
+            password = "A$APMOB";
 
         private static string sConnection =
             $"Server={host};Port={puerto};User Id={userId};Password={password};Database={database};";

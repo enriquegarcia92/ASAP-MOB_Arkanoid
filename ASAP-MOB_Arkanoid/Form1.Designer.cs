@@ -30,8 +30,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Ballpicbox = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.TabPicbox = new System.Windows.Forms.PictureBox();
@@ -47,9 +46,9 @@
             // Ballpicbox
             // 
             this.Ballpicbox.BackColor = System.Drawing.Color.Red;
-            this.Ballpicbox.Location = new System.Drawing.Point(335, 235);
+            this.Ballpicbox.Location = new System.Drawing.Point(383, 251);
             this.Ballpicbox.Name = "Ballpicbox";
-            this.Ballpicbox.Size = new System.Drawing.Size(29, 29);
+            this.Ballpicbox.Size = new System.Drawing.Size(33, 31);
             this.Ballpicbox.TabIndex = 0;
             this.Ballpicbox.TabStop = false;
             // 
@@ -62,9 +61,9 @@
             // TabPicbox
             // 
             this.TabPicbox.BackColor = System.Drawing.Color.AliceBlue;
-            this.TabPicbox.Location = new System.Drawing.Point(178, 652);
+            this.TabPicbox.Location = new System.Drawing.Point(203, 695);
             this.TabPicbox.Name = "TabPicbox";
-            this.TabPicbox.Size = new System.Drawing.Size(117, 12);
+            this.TabPicbox.Size = new System.Drawing.Size(134, 13);
             this.TabPicbox.TabIndex = 1;
             this.TabPicbox.TabStop = false;
             // 
@@ -72,12 +71,9 @@
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 0);
@@ -85,9 +81,8 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(664, 35);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(759, 37);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // label1
@@ -95,35 +90,35 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 16);
+            this.label1.Size = new System.Drawing.Size(103, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
             // label2
             // 
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(501, 0);
+            this.label2.Location = new System.Drawing.Point(571, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 23);
+            this.label2.Size = new System.Drawing.Size(183, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             // 
             // label3
             // 
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(335, 0);
+            this.label3.Location = new System.Drawing.Point(382, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 20);
+            this.label3.Size = new System.Drawing.Size(182, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ASAP_MOB_Arkanoid.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(664, 721);
+            this.ClientSize = new System.Drawing.Size(759, 769);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.TabPicbox);
             this.Controls.Add(this.Ballpicbox);

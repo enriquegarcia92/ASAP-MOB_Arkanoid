@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\rodri\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rodri\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\rodri\Documents\GitHub\ASAP-MOB_Arkanoid\ASAP-MOB_Arkanoid" t="IncludeRecursive">
+      <e p="App.config" t="Include" />
+      <e p="ASAP-MOB_Arkanoid.csproj" t="IncludeRecursive" />
+      <e p="BaseDatos.cs" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Form1.cs" t="Include" />
+      <e p="Form1.Designer.cs" t="Include" />
+      <e p="Form1.resx" t="Include" />
+      <e p="Menu.cs" t="Include" />
+      <e p="Menu.Designer.cs" t="Include" />
+      <e p="Menu.resx" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+        <e p="Resources.Designer.cs" t="Include" />
+        <e p="Resources.resx" t="Include" />
+        <e p="Settings.Designer.cs" t="Include" />
+        <e p="Settings.settings" t="Include" />
+      </e>
+      <e p="Puntuaciones.cs" t="Include" />
+      <e p="Puntuaciones.Designer.cs" t="Include" />
+      <e p="Puntuaciones.resx" t="Include" />
+      <e p="Resources" t="Include">
+        <e p="arkanoid_logo.png" t="Include" />
+        <e p="fondo.png" t="Include" />
+        <e p="logoArkanoid.jpg" t="Include" />
+        <e p="menu.png" t="Include" />
+      </e>
+      <e p="User.cs" t="Include" />
+      <e p="User.Designer.cs" t="Include" />
+      <e p="User.resx" t="Include" />
+    </e>
+  </component>
+</project>
