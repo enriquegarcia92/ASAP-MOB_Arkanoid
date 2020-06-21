@@ -45,9 +45,9 @@ namespace ASAP_MOB_Arkanoid
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 104);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 73);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(563, 415);
+            this.dataGridView1.Size = new System.Drawing.Size(267, 286);
             this.dataGridView1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -65,7 +65,7 @@ namespace ASAP_MOB_Arkanoid
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.18123F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.46725F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.37555F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(569, 625);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(273, 433);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // label1
@@ -73,7 +73,7 @@ namespace ASAP_MOB_Arkanoid
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(187, 30);
+            this.label1.Location = new System.Drawing.Point(39, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 40);
             this.label1.TabIndex = 1;
@@ -88,9 +88,9 @@ namespace ASAP_MOB_Arkanoid
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(3, 525);
+            this.button1.Location = new System.Drawing.Point(3, 365);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(563, 97);
+            this.button1.Size = new System.Drawing.Size(267, 65);
             this.button1.TabIndex = 2;
             this.button1.Text = "Volver al Menu";
             this.button1.UseVisualStyleBackColor = true;
@@ -101,7 +101,7 @@ namespace ASAP_MOB_Arkanoid
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ASAP_MOB_Arkanoid.Properties.Resources.menu;
-            this.ClientSize = new System.Drawing.Size(569, 625);
+            this.ClientSize = new System.Drawing.Size(273, 433);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));

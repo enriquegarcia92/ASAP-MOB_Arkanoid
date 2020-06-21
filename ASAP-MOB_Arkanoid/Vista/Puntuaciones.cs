@@ -15,11 +15,10 @@ namespace ASAP_MOB_Arkanoid
         {
             try
             {
-                var dt = BaseDatos.ExecuteQuery($"SELECT id, nombres, puntaje FROM Jugadores ");
+                var dt = BaseDatos.ExecuteQuery($"SELECT nombres,puntaje FROM Jugadores ORDER BY puntaje DESC LIMIT 10 ");
                 if (dt.Rows.Count > 0)
                 {
                     dataGridView1.DataSource = dt;
-                    this.dataGridView1.Sort(this.dataGridView1.Columns[2], ListSortDirection.Descending);
 
                 }
                 else
