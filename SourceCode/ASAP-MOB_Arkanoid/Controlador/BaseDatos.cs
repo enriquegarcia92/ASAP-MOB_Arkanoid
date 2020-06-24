@@ -1,6 +1,7 @@
 ﻿using System.Data;
 using Npgsql;
 
+
 namespace ASAP_MOB_Arkanoid
 {
     public class BaseDatos

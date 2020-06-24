@@ -14,10 +14,8 @@ namespace ASAP_MOB_Arkanoid
 
         private int remainingPb = 0;
 
-        // Para trabajar con pic + label
         private PictureBox heart;
 
-        // Para trabajar con n pic
         private PictureBox[] hearts;
 
         private delegate void BallActions();    
@@ -35,19 +33,19 @@ namespace ASAP_MOB_Arkanoid
             get
             {
                 CreateParams handleParam = base.CreateParams;
-                handleParam.ExStyle |= 0x02000000;   // WS_EX_COMPOSITED       
+                handleParam.ExStyle |= 0x02000000;       
                 return handleParam;
             }
         }
 
-        // Metodos que coinciden con el delegate de Event
+
         private void ControlArkanoid_Load(object sender, EventArgs e)
         {
             label1.Text = Program.usuario;
 
             ScoresPanel();
             
-            // Seteando los atributos para picBox jugador
+        
             playerPb.BackgroundImage = Image.FromFile("../../Imagenes/Player.png");
             playerPb.BackgroundImageLayout = ImageLayout.Stretch;
             playerPb.BackColor=Color.Transparent;
@@ -55,7 +53,7 @@ namespace ASAP_MOB_Arkanoid
             playerPb.Top = Height - playerPb.Height - 80;
             playerPb.Left = (Width / 2) - (playerPb.Width / 2);
 
-            // Seteando los atributos para picBox pelota
+           
              ball= new PictureBox();
             ball.Width = ball.Height = 20;
 
@@ -90,12 +88,13 @@ namespace ASAP_MOB_Arkanoid
                         cpb[i, j].Golpes = 2;
                     else
                         cpb[i, j].Golpes = 1;
-
-                    // Seteando el tamano
+                    
+                    
+                    
                     cpb[i, j].Height = pbHeight;
                     cpb[i, j].Width = pbWidth;
-
-                    // Posicion de left, y posicion de top
+                    
+                    
                     cpb[i, j].Left = j * pbWidth;
                     cpb[i, j].Top = i * pbHeight + scorePanel.Height + 1;
 
@@ -265,13 +264,10 @@ namespace ASAP_MOB_Arkanoid
             ball.Top += DatosJuego.dirY;
         }
 
-        // Se encarga de inicializar todos los elementos del panel de puntajes + vidas
         private void ScoresPanel()
         {
-            // Instanciar panel
             scorePanel = new Panel();
 
-            // Setear elementos del panel
             scorePanel.Width = Width;
             scorePanel.Height = (int)(Height * 0.07);
 
@@ -297,7 +293,6 @@ namespace ASAP_MOB_Arkanoid
 
             for(int i = 0; i < DatosJuego.lifes; i++)
             {
-                // Instanciacion de pb
                 hearts[i] = new PictureBox();
 
                 hearts[i].Height = hearts[i].Width = scorePanel.Height;
@@ -308,7 +303,6 @@ namespace ASAP_MOB_Arkanoid
                 hearts[i].Top = 0;
 
                 if (i == 0)
-                    // corazones[i].Left = 20;
                     hearts[i].Left = scorePanel.Width / 2;
                 else
                 {
@@ -317,11 +311,9 @@ namespace ASAP_MOB_Arkanoid
             }
             #endregion
 
-            // Instanciar labels
             remainingLifes = new Label();
             score = new Label();
 
-            // Setear elementos de los labels
             remainingLifes.ForeColor = score.ForeColor = Color.White;
 
             remainingLifes.Text = "x " + DatosJuego.lifes.ToString();
